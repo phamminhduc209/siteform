@@ -112,7 +112,52 @@
 											</div>
 										</div>
 									</div><!-- /form-group -->
+									<div class="form-group required has-feedback account-number has-error">
+								        <label class="col-md-4 control-label">Số tài khoản nhận tiền</label>
+								        <div class="col-md-8">
+								          <input class="form-control" placeholder="Số tài khoản VCB. Vd: 05010000xxxxx" required="required" type="text" style="">
+								          <span>
+								            <span class="form-control-feedback glyphicon glyphicon-cog fa-spin"></span>
+								          </span>
+								          <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+								          <span class="form-control-feedback glyphicon glyphicon-warning-sign"></span>
+								          <div class="help-block">Số tài khoản không đúng</div>
+								          <a class="btn-refetch" href="">Thử lại</a>
+								          <img height="141" src="images/card-50b19d414b864e47c9baf626b09c5ff6.png">
+								        </div>
+							      	</div><!-- /form-group -->
+							      	<div class="form-group">
+									    <label class="col-md-4 control-label">Tên tài khoản nhận tiền</label>
+									    <div class="col-md-8">
+									        <input class="form-control" disabled="" name="accountName" required="" type="text">
+									    </div>
+									</div><!-- /form-group -->
+									<div class="form-group">
+									    <label class="col-md-4 control-label">Số tiền nhận</label>
+									    <div class="col-md-8">
+									        <div class="input-group">
+									            <input class="form-control" disabled="" type="text" value="0">
+									            <span class="input-group-addon">VND</span>
+									        </div>
+									    </div>
+									</div><!-- /form-group -->
+									<div class="form-group">
+									    <label class="col-md-4 control-label">Chúng tôi còn</label>
+									    <div class="col-md-8">
+									        <div class="input-group">
+									            <input class="form-control text-success" disabled="" name="vnd_reserve" type="text" value="300,000,000">
+									            <span class="input-group-addon">VND</span>
+									        </div>
+									    </div>
+									</div><!-- /form-group -->
 								</div><!-- /panel-body -->
+							</div>
+							<div class="panel-footer text-right">
+							    <span>
+								    <i class="fa-2x ng-scope" translate="PROCESSING">Đang xử lý...</i>
+								    <i class="fa fa-spinner fa-spin fa-2x"></i>
+							    </span>
+							    <button class="btn" type="submit" disabled="disabled">Tiếp tục</button>
 							</div>
 						</form>
 					</div>
