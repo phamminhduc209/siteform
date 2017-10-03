@@ -12,7 +12,7 @@
 
 /*===== Import Files =====*/
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext');*/
 
 /*  Css */
 @import url(../lib/bootstrap/bootstrap.min.css);
@@ -25,74 +25,29 @@
   padding: 0;
 }
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.428571429;
   color: #2C3E50;
   background-color: #fff;
 }
-a {
-  color: #428bca;
-  outline: none;
+a:hover, a:focus {
+  color: #18BC9C;
+  text-decoration: underline;
 }
-a:hover,
-a:focus {
-  color: #999999;
-  text-decoration: none;
-  outline: none;
-  transition: all 0.25s;
-}
-p { margin: 0; }
-select:focus, button:focus, input:focus { outline: none; }
-.btn.focus, .btn:focus, .btn:hover {
-  color: #333;
-  text-decoration: none;
-  outline: none;
-}
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-  outline: none;
-}
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea, select, input[type="number"],
-input[type="tel"] {
-  border: none;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-ul li,
-ol li {
-  list-style: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 10px;
+a:active, a:hover {
+  outline: 0;
 }
 .wrapper {
   position: relative;
 }
 
 /*===== Common =====*/
-.block {
-  margin-bottom: 20px;
-  position: relative;
-  display: block;
+.btn {
+  padding: 10px 15px;
+  font-size: 15px;
+}
+.link-color {
+  color: #428bca;
 }
 
 /*===== Header =====*/
@@ -133,7 +88,222 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 19.5px;
   }
 }
-.navbar-default .navbar-nav>li>a:hover, #santienao_com .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #18BC9C;
   background-color: transparent;
+}
+
+/*===== Main =====*/
+.block-form .page-header-title h1 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 0;
+}
+.block-form .panel-default {
+  border-color: #ecf0f1;
+}
+.block-form .panel-default>.panel-heading {
+  color: #2C3E50;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+.block-form .panel-footer {
+  background-color: #ecf0f1;
+  border-top: 1px solid #ecf0f1;
+}
+.block-input .form-control {
+  height: 43px;
+  font-size: 15px;
+}
+.block-form .btn-group>.btn, .block-form .btn-group-vertical>.btn {
+  position: relative;
+  float: left;
+}
+.block-form .btn-primary {
+  background-image: -webkit-linear-gradient(#3a526a, #2C3E50 60%, #253443);
+  background-image: linear-gradient(#3a526a, #2C3E50 60%, #253443);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3A526A', endColorstr='#FF253443', GradientType=0);
+  -webkit-filter: none;
+  filter: none;
+  border-bottom: 1px solid #1a252f;
+}
+.bank-select button.btn {
+  font-size: 10px !important;
+}
+.block-form .btn-refetch {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  font-weight: bold;
+}
+
+.block-form ul,
+.block-form ol {
+  padding-left: 40px;
+}
+
+/*===== Footer =====*/
+footer .btn-default {
+  background-image: -webkit-linear-gradient(#3a526a, #2C3E50 60%, #253443);
+  background-image: linear-gradient(#3a526a, #2C3E50 60%, #253443);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3A526A', endColorstr='#FF253443', GradientType=0);
+  -webkit-filter: none;
+  filter: none;
+  border-bottom: 1px solid #1a252f;
+  color: #fff;
+}
+footer .btn-default:hover, footer .btn-default:visited, footer .btn-default:focus {
+  color: #ccc;
+}
+
+/*===== Sidebar =====*/
+#sidebar .group-title .text-center {
+  text-align: left;
+}
+#sidebar .legend-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
+#sidebar .list-group-item {
+  padding: 10px;
+}
+#sidebar .list-group-item img {
+  vertical-align: bottom;
+}
+.menu-item-btn-sell-wex, .menu-item-btn-buy-wex {
+  position: relative;
+}
+.menu-item-btn-sell-wex:after, .menu-item-btn-buy-wex:after {
+  position: absolute;
+  top: -7px;
+  right: -52px;
+  content: url(../images/new.png);
+}
+.empty-logo {
+  display: inline-block;
+  width: 16px;
+}
+
+/* Block Support */
+.block-support .panel {
+  padding: 10px;
+}
+.block-support .panel a:hover {
+  text-decoration: none;
+}
+.block-support .panel i {
+  display: inline-block;
+  font-size: 35px;
+  float: left;
+  margin-right: 10px;
+  vertical-align: super;
+}
+.block-support .panel span {
+  display: block;
+  font-size: 18px;
+  color: #333;
+}
+.block-support .panel span.phone {
+  color: #2B55AA;
+  font-weight: normal;
+  font-size: 25px; 
+}
+.block-support .panel span span {
+  display: block;
+  font-size: 14px;
+}
+
+/* Block Reviews */
+.list-reviews {
+  position: relative;
+  overflow: auto;
+  width: auto;
+  height: 300px;
+  margin: -8px;
+}
+.itemdiv {
+  padding-right: 3px;
+  min-height: 66px;
+  position: relative;
+}
+.itemdiv.dialogdiv {
+  padding-bottom: 14px;
+}
+.itemdiv.dialogdiv .veritical-line {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  width: 3px;
+  max-width: 3px;
+  background-color: #E1E6ED;
+  border: 1px solid #D7DBDD;
+  border-width: 0 1px;
+}
+.itemdiv>.user {
+  display: inline-block;
+  width: 42px;
+  position: absolute;
+  left: 0;
+}
+.itemdiv>.user img {
+  border-radius: 100%;
+  border: 2px solid #5293C4;
+  max-width: 40px;
+  position: relative;
+}
+.itemdiv>.body {
+  width: auto;
+  margin-left: 50px;
+  margin-right: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.itemdiv.dialogdiv>.body {
+  border: 1px solid #DDE4ED;
+  padding: 5px 8px 8px;
+  border-left-width: 2px;
+  margin-right: 1px;
+}
+.itemdiv.dialogdiv>.body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -7px;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #DDE4ED;
+  border-width: 2px 0 0 2px;
+  background-color: #ecf0f1;
+  box-sizing: content-box;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.itemdiv>.body>.name {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  float: left;
+}
+.itemdiv>.body>.text {
+  display: block;
+  position: relative;
+  margin-top: 2px;
+  padding-bottom: 19px;
+  padding-left: 7px;
+  font-size: 13px;
+}
+.itemdiv:last-child>.body>.text {
+  border-bottom: none;
+}
+.itemdiv.dialogdiv>.body>.text {
+  padding-left: 0;
+  padding-bottom: 0px;
 }

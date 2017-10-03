@@ -15,11 +15,6 @@
 	<!-- ===== Responsive CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,700,800,300&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
-
-
 	<!-- ===== Responsive CSS ===== -->
   	<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 
@@ -35,140 +30,531 @@
 	
 	<div class="wrapper">
 
-	<header class="header">
-		<nav class="navbar navbar-default navbar-cus">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle collapsed" type="button">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#" target="_self">
-						<span>
-							<img src="images/logo.png" alt="Logo">
-							<span class="site-title">San Tien Ao</span>
-						</span>
-					</a>
-				</div><!-- /navbar-header -->
-				<div class="collapse navbar-collapse" id="my-navbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#" target="_self" title="">
-								<i class="fa fa-book"></i>
-								<span">Kiến thức cơ bản</span>
-							</a>
-						</li>
-						<li>
-							<a href="#" target="_self" title="">
-								<i class="fa fa-search"></i>
-								<span>Tra cứu giao dịch</span>
-							</a>
-						</li>
-						<li>
-							<a class="btn-sign-in" href="#" target="_self" title="">
-								<span>Đăng nhập/Đăng ký</span>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /navbar-collapse -->
-			</div>
-		</nav>
-	</header><!-- /header -->
+		<header class="header">
+			<nav class="navbar navbar-default navbar-cus">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#" target="_self">
+							<span>
+								<img src="images/logo.png" alt="Logo">
+								<span class="site-title">San Tien Ao</span>
+							</span>
+						</a>
+					</div><!-- /navbar-header -->
+					<div class="collapse navbar-collapse" id="my-navbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" target="_self" title="">
+									<i class="fa fa-book"></i>
+									<span">Kiến thức cơ bản</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_self" title="">
+									<i class="fa fa-search"></i>
+									<span>Tra cứu giao dịch</span>
+								</a>
+							</li>
+							<li>
+								<a class="btn-sign-in" href="#" target="_self" title="">
+									<span>Đăng nhập/Đăng ký</span>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /navbar-collapse -->
+				</div>
+			</nav>
+		</header><!-- /header -->
 
-	<section class="main">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-sm-push-3 main-content">
-					<div class="trade-content">
-						<div class="page-header-title">
-							<h1>Bán BTC</h1>
-							<a href="#" target="_blank">Hướng dẫn giao dịch</a>
-						</div><!-- /page-header-title -->
-						<form action="#" method="POST" name="" class="form-horizontal">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<span class="text-muted">Giao dịch tự động trong vòng 5s qua Vietcombank 24/7<br>(kể cả ban đêm &amp; cuối tuần)</span>
-								</div><!-- /panel-heading -->
-								<div class="panel-body">
-									<div class="form-group required has-error">
-										<label class="col-md-4 control-label">Số lượng BTC bán</label>
-										<div class="col-md-8">
-											<div class="input-group">
-												<input class="form-control" min="0.01" name="quantity" placeholder="e.g.: 10" required="required" step="any" type="number">
-												<span class="input-group-addon">BTC</span>
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-sm-push-3 main-content">
+						<div class="block-form block-input">
+							<div class="page-header-title">
+								<h1>Bán BTC</h1>
+								<a href="#" target="_blank">Hướng dẫn giao dịch</a>
+							</div><!-- /page-header-title -->
+							<form action="#" method="POST" name="" class="form-horizontal">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<span class="text-muted">Giao dịch tự động trong vòng 5s qua Vietcombank 24/7<br>(kể cả ban đêm &amp; cuối tuần)</span>
+									</div><!-- /panel-heading -->
+									<div class="panel-body">
+										<div class="form-group required has-error">
+											<label class="col-md-4 control-label">Số lượng BTC bán</label>
+											<div class="col-md-8">
+												<div class="input-group">
+													<input class="form-control" min="0.01" name="quantity" placeholder="e.g.: 10" required="required" step="any" type="number">
+													<span class="input-group-addon">BTC</span>
+												</div>
+												<div class="help-block">Số lượng tối thiểu là 0.01 BTC</div>
 											</div>
-											<div class="help-block">Số lượng tối thiểu là 0.01 BTC</div>
-										</div>
-									</div><!-- /form-group -->
-									<div class="form-group">
-										<label class="col-md-4 control-label ng-scope" translate="BANK_NAME">Ngân hàng nhận tiền</label>
-										<div class="col-md-8">
-											<div>
-												<div class="bank-select btn-group" role="group">
-													<button class="btn btn-primary" type="button">Vietcombank</button>
+										</div><!-- /form-group -->
+										<div class="form-group required has-success">
+											<label class="col-md-4 control-label">Số lượng BTC bán</label>
+											<div class="col-md-8">
+												<div class="input-group">
+													<input class="form-control" min="0.01" name="quantity" placeholder="e.g.: 10" required="required" step="any" type="number">
+													<span class="input-group-addon">BTC</span>
+												</div>
+												<div class="help-block">Số lượng tối thiểu là 0.01 BTC</div>
+											</div>
+										</div><!-- /form-group -->
+										<div class="form-group">
+											<label class="col-md-4 control-label ng-scope" translate="BANK_NAME">Ngân hàng nhận tiền</label>
+											<div class="col-md-8">
+												<div>
+													<div class="bank-select btn-group" role="group">
+														<button class="btn btn-primary" type="button">Vietcombank</button>
+													</div>
 												</div>
 											</div>
+										</div><!-- /form-group -->
+										<div class="form-group required has-feedback account-number has-error">
+									        <label class="col-md-4 control-label">Số tài khoản nhận tiền</label>
+									        <div class="col-md-8">
+									          <input class="form-control" placeholder="Số tài khoản VCB. Vd: 05010000xxxxx" required="required" type="text" style="">
+									          <span>
+									            <span class="form-control-feedback glyphicon glyphicon-cog fa-spin"></span>
+									          </span>
+									          <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+									          <span class="form-control-feedback glyphicon glyphicon-warning-sign"></span>
+									          <div class="help-block">Số tài khoản không đúng</div>
+									          <a class="btn-refetch" href="">Thử lại</a>
+									          <img height="141" src="images/card-50b19d414b864e47c9baf626b09c5ff6.png">
+									        </div>
+								      	</div><!-- /form-group -->
+								      	<div class="form-group">
+										    <label class="col-md-4 control-label">Tên tài khoản nhận tiền</label>
+										    <div class="col-md-8">
+										        <input class="form-control" disabled="" name="accountName" required="" type="text">
+										    </div>
+										</div><!-- /form-group -->
+										<div class="form-group">
+										    <label class="col-md-4 control-label">Số tiền nhận</label>
+										    <div class="col-md-8">
+										        <div class="input-group">
+										            <input class="form-control" disabled="" type="text" value="0">
+										            <span class="input-group-addon">VND</span>
+										        </div>
+										    </div>
+										</div><!-- /form-group -->
+										<div class="form-group">
+										    <label class="col-md-4 control-label">Chúng tôi còn</label>
+										    <div class="col-md-8">
+										        <div class="input-group">
+										            <input class="form-control text-success" disabled="" name="vnd_reserve" type="text" value="300,000,000">
+										            <span class="input-group-addon">VND</span>
+										        </div>
+										    </div>
+										</div><!-- /form-group -->
+									</div><!-- /panel-body -->
+									<div class="panel-footer text-right">
+									    <span>
+										    <i class="fa-2x ng-scope" translate="PROCESSING">Đang xử lý...</i>
+										    <i class="fa fa-spinner fa-spin fa-2x"></i>
+									    </span>
+									    <button class="btn" type="submit" disabled="disabled">Tiếp tục</button>
+									</div><!-- /panel-footer -->
+								</div>
+							</form><!-- /form-horizontal -->
+							<div class="panel panel-default panel-instructions">
+								<div class="panel-body">
+									<h5 class="lg-title">
+										<strong>Hướng dẫn giao dịch</strong>
+									</h5>
+									<ul>
+										<li>Nhập số lượng WEX Code muốn bán</li>
+										<li>
+											<span>Điền số tài khoản ngân hàng VCB</span><br>
+											<strong class="text-danger">(Hiện chúng tôi chỉ hỗ trợ tài khoản Vietcombank-VCB)</strong>
+										</li>
+										<li>Bấm vào nút "Tiếp tục"</li>
+										<li>Bạn vào tài khoản wex.nz và tạo WEX Code với số lượng tương ứng</li>
+										<li>Hệ thống sẽ chuyển tiền cho bạn trong giây lát</li>
+									</ul>
+									<h5 class="lg-title">
+										<strong>Chú ý</strong>
+									</h5>
+									<ul>
+										<li>Tuyệt đối không đưa link đơn hàng cho người khác.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- /main-content -->
+
+					<div class="col-sm-3 col-sm-pull-6 left-sidebar-desktop hidden-xs">
+						<div id="sidebar">
+							<div class="well thumbnail">
+								<div class="block-sidebar">
+									<div class="div text-center group-title">
+										<p class="text-center">
+											<span >Bạn muốn</span>
+											<strong class="text-danger legend-title">Bán</strong>
+										</p>
+									</div><!-- /group-title -->
+									<div class="list-group">
+										<div class="menu-item-btn-sell-btc shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc active">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>92,385,588 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/btc.ico"></i>
+												<span>Bitcoin</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-eth shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>92,385,588 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/eth.ico"></i>
+												<span>Ethereum</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-pm shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>22,400 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/pm.ico"></i>
+												<span>Perfect Money</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-usdt shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>23,210 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/usdt.ico"></i>
+												<span>Tether USD</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-wex shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>21,900 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/wex.ico"></i>
+												<span>WEX</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-btc shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-danger">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>22,170 VND</span>
+												</span>
+												<div class="empty-logo"></div>
+												<span>Web Money</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+									</div><!-- /list-group -->
+								</div><!-- /block-sidebar -->
+
+								<div class="block-sidebar">
+									<div class="div text-center group-title">
+										<p class="text-center">
+											<span >Bạn muốn</span>
+											<strong class="text-success legend-title">Bán</strong>
+										</p>
+									</div><!-- /group-title -->
+									<div class="list-group">
+										<div class="menu-item-btn-sell-btc shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>92,385,588 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/btc.ico"></i>
+												<span>Bitcoin</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-eth shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>92,385,588 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/eth.ico"></i>
+												<span>Ethereum</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-pm shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>22,400 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/pm.ico"></i>
+												<span>Perfect Money</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-usdt shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>23,210 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/usdt.ico"></i>
+												<span>Tether USD</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-wex shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>21,900 VND</span>
+												</span>
+												<i class="fa"><img height="16" src="images/wex.ico"></i>
+												<span>WEX</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+										<div class="menu-item-btn-sell-btc shepherd-target trading-menu-item">
+											<a href="#" title="" class="list-group-item btn-sell-btc">
+												<span class="badge pull-right badge-price hidden-sm alert-success">
+													<span class="visible-xs-inline-block">Giá: </span>
+													<span>22,170 VND</span>
+												</span>
+												<div class="empty-logo"></div>
+												<span>Web Money</span>
+											</a>
+										</div><!-- /menu-item-btn-sell-btc -->
+									</div><!-- /list-group -->
+								</div><!-- /block-sidebar -->
+
+								<div class="block-sidebar">
+									<div class="div text-center group-title">
+										<p class="text-center">
+											<span >Bạn muốn</span>
+											<strong class="text-danger legend-title">Trao Đổi</strong>
+										</p>
+									</div><!-- /group-title -->
+									<div class="list-group">
+										<a class="list-group-item btn-ex-btc-pm" href="#">
+											<span class="badge pull-right alert-warning badge-price hidden-sm">4151.4</span>
+											<i class="fa">
+												<img height="16" src="images/btc.ico">
+											</i>
+											<span>BTC ➞</span>
+											<i class="fa">
+												<img height="16" src="images/pm.ico">
+											</i>
+											<span>PM</span>
+												<br class="visible-sm-block">
+											<div class="badge alert-warning badge-price visible-sm-inline-block">4151.4</div>
+										</a><!-- /menu-item-btn-sell-btc -->
+										<a class="list-group-item btn-ex-btc-pm" href="#">
+											<span class="badge pull-right alert-warning badge-price hidden-sm">4151.4</span>
+											<i class="fa">
+												<img height="16" src="images/pm.ico">
+											</i>
+											<span>PM ➞</span>
+											<i class="fa">
+												<img height="16" src="images/btc.ico">
+											</i>
+											<span>BTC</span>
+												<br class="visible-sm-block">
+											<div class="badge alert-warning badge-price visible-sm-inline-block">4151.4</div>
+										</a><!-- /menu-item-btn-sell-btc -->
+										<a class="list-group-item btn-ex-btc-pm" href="#">
+											<span class="badge pull-right alert-warning badge-price hidden-sm">4151.4</span>
+											<i class="fa">
+												<img height="16" src="images/wex.ico">
+											</i>
+											<span>WEX ➞</span>
+											<i class="fa">
+												<img height="16" src="images/pm.ico">
+											</i>
+											<span>PM</span>
+												<br class="visible-sm-block">
+											<div class="badge alert-warning badge-price visible-sm-inline-block">4151.4</div>
+										</a><!-- /menu-item-btn-sell-btc -->
+										<a class="list-group-item btn-ex-btc-pm" href="#">
+											<span class="badge pull-right alert-warning badge-price hidden-sm">4151.4</span>
+											<i class="fa">
+												<img height="16" src="images/wex.ico">
+											</i>
+											<span>WEX ➞</span>
+											<i class="fa">
+												<img height="16" src="images/pm.ico">
+											</i>
+											<span>Voucher</span>
+												<br class="visible-sm-block">
+											<div class="badge alert-warning badge-price visible-sm-inline-block">4151.4</div>
+										</a><!-- /menu-item-btn-sell-btc -->
+									</div><!-- /list-group -->
+								</div><!-- /block-sidebar -->
+							</div>
+						</div><!-- /sidebar -->
+					</div><!-- /left-sidebar-desktop -->
+
+					<div class="col-sm-3 right-sidebar">
+						<div id="rightbar">
+							<div class="well block-support">
+								<div class="panel">
+									<a href="#" title="">
+										<i class="fa fa-comment"></i>
+										<span><span>Những câu hỏi</span> thường gặp</span>
+									</a>
+								</div><!-- /panel -->
+								<div class="panel">
+									<a href="#" title="">
+										<i class="fa fa-comments"></i>
+										<span><span>Chat với chúng tôi</span> Hỗ Trợ Trực Tuyến</span>
+									</a>
+								</div><!-- /panel -->
+								<div class="panel">
+									<a href="#" title="">
+										<i class="fa fa-phone"></i>
+										<span class="phone"><span></span>0900-000-000</span>
+									</a>
+								</div><!-- /panel -->
+							</div><!-- /well block-support -->
+
+							<div class="well block-reviews">
+								<h4 class="text-center">Đánh giá</h4>
+								<div class="list-reviews">
+									<div class="wrapper">
+										<div class="itemdiv dialogdiv">
+											<div class="veritical-line"></div>
+											<div class="user">
+												<img alt="Lennhi trung Duong 0966222944" src="images/avatar.jpg">
+											</div>
+											<div class="body">
+												<div class="name">
+													<span class="link-color ng-binding">Lennhi trung Duong 0966222944</span>
+												</div>
+												<div class="clearfix"></div>
+												<div class="text">Mua code wex  giaomdich tot</div>
+											</div>
 										</div>
-									</div><!-- /form-group -->
-									<div class="form-group required has-feedback account-number has-error">
-								        <label class="col-md-4 control-label">Số tài khoản nhận tiền</label>
-								        <div class="col-md-8">
-								          <input class="form-control" placeholder="Số tài khoản VCB. Vd: 05010000xxxxx" required="required" type="text" style="">
-								          <span>
-								            <span class="form-control-feedback glyphicon glyphicon-cog fa-spin"></span>
-								          </span>
-								          <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-								          <span class="form-control-feedback glyphicon glyphicon-warning-sign"></span>
-								          <div class="help-block">Số tài khoản không đúng</div>
-								          <a class="btn-refetch" href="">Thử lại</a>
-								          <img height="141" src="images/card-50b19d414b864e47c9baf626b09c5ff6.png">
-								        </div>
-							      	</div><!-- /form-group -->
-							      	<div class="form-group">
-									    <label class="col-md-4 control-label">Tên tài khoản nhận tiền</label>
-									    <div class="col-md-8">
-									        <input class="form-control" disabled="" name="accountName" required="" type="text">
-									    </div>
-									</div><!-- /form-group -->
-									<div class="form-group">
-									    <label class="col-md-4 control-label">Số tiền nhận</label>
-									    <div class="col-md-8">
-									        <div class="input-group">
-									            <input class="form-control" disabled="" type="text" value="0">
-									            <span class="input-group-addon">VND</span>
-									        </div>
-									    </div>
-									</div><!-- /form-group -->
-									<div class="form-group">
-									    <label class="col-md-4 control-label">Chúng tôi còn</label>
-									    <div class="col-md-8">
-									        <div class="input-group">
-									            <input class="form-control text-success" disabled="" name="vnd_reserve" type="text" value="300,000,000">
-									            <span class="input-group-addon">VND</span>
-									        </div>
-									    </div>
-									</div><!-- /form-group -->
-								</div><!-- /panel-body -->
-							</div>
-							<div class="panel-footer text-right">
-							    <span>
-								    <i class="fa-2x ng-scope" translate="PROCESSING">Đang xử lý...</i>
-								    <i class="fa fa-spinner fa-spin fa-2x"></i>
-							    </span>
-							    <button class="btn" type="submit" disabled="disabled">Tiếp tục</button>
-							</div>
-						</form>
-					</div>
-				</div><!-- /main-content -->
-				<div class="col-sm-3 col-sm-pull-6 left-sidebar-desktop hidden-xs"></div><!-- /left-sidebar-desktop -->
-				<div class="col-sm-3 right-sidebar"></div><!-- /right-sidebar -->
+									</div><!-- /wrapper -->
+									<div class="wrapper">
+										<div class="itemdiv dialogdiv">
+											<div class="veritical-line"></div>
+											<div class="user">
+												<img alt="Lennhi trung Duong 0966222944" src="images/avatar.jpg">
+											</div>
+											<div class="body">
+												<div class="name">
+													<span class="link-color ng-binding">Lennhi trung Duong 0966222944</span>
+												</div>
+												<div class="clearfix"></div>
+												<div class="text">Mua code wex  giaomdich tot</div>
+											</div>
+										</div>
+									</div><!-- /wrapper -->
+									<div class="wrapper">
+										<div class="itemdiv dialogdiv">
+											<div class="veritical-line"></div>
+											<div class="user">
+												<img alt="Lennhi trung Duong 0966222944" src="images/avatar.jpg">
+											</div>
+											<div class="body">
+												<div class="name">
+													<span class="link-color ng-binding">Lennhi trung Duong 0966222944</span>
+												</div>
+												<div class="clearfix"></div>
+												<div class="text">Mua code wex  giaomdich tot</div>
+											</div>
+										</div>
+									</div><!-- /wrapper -->
+									<div class="wrapper">
+										<div class="itemdiv dialogdiv">
+											<div class="veritical-line"></div>
+											<div class="user">
+												<img alt="Lennhi trung Duong 0966222944" src="images/avatar.jpg">
+											</div>
+											<div class="body">
+												<div class="name">
+													<span class="link-color ng-binding">Lennhi trung Duong 0966222944</span>
+												</div>
+												<div class="clearfix"></div>
+												<div class="text">Mua code wex  giaomdich tot</div>
+											</div>
+										</div>
+									</div><!-- /wrapper -->
+									<div class="wrapper">
+										<div class="itemdiv dialogdiv">
+											<div class="veritical-line"></div>
+											<div class="user">
+												<img alt="Lennhi trung Duong 0966222944" src="images/avatar.jpg">
+											</div>
+											<div class="body">
+												<div class="name">
+													<span class="link-color ng-binding">Lennhi trung Duong 0966222944</span>
+												</div>
+												<div class="clearfix"></div>
+												<div class="text">Mua code wex  giaomdich tot</div>
+											</div>
+										</div>
+									</div><!-- /wrapper -->
+								</div><!-- /list-reviews -->
+							</div><!-- /well block-support -->
+						</div>
+					</div><!-- /right-sidebar -->
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 	</div><!-- /wrapper -->
+
+	<footer>
+		<div class="footer text-center">
+			<div class="contacts">
+				<div class="btn-group btn-group-list btn-group-notification">
+					<a class="btn btn-rounded btn-default" href="#">
+						<img height="18" src="images/phone-1de73c82d98c39f4ba23cb30781d1814.ico" width="18">
+						<strong>096-194-8902 (Zalo)</strong>
+					</a>
+				</div>
+				<div class="btn-group btn-group-list btn-group-notification">
+					<a class="btn btn-rounded btn-default" href="mailto:admin@axy.com">
+						<img height="18" src="images/email-ae5103b73f455c38639cd5bad9fc094d.ico" width="18">
+						<strong>admin@santienao.com</strong>
+					</a>
+				</div>
+			</div>
+			<hr>
+			<div class="links">
+				<strong class="lg-title mb10">
+				[
+				<a href=""">About us</a>
+				]
+				</strong>
+				<strong class="lg-title mb10">
+				[
+				<a href="">Disclaimer</a>
+				]
+				</strong>
+				<strong class="lg-title mb10">
+				[
+				<a href="">Điều khoản</a>
+				]
+				</strong>
+				<strong class="lg-title mb10">
+				[
+				<a href="#">Những câu hỏi thường gặp</a>
+				]
+				</strong>
+		  	</div>
+		  	<hr>
+		</div>
+	</footer>
 
 	<div class="hide">
 		Page 1: <a href="#" title="">https://santienao.com/btc/sell</a>
